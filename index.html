@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Website </title>
+</head>
+
+<body>
+    <!-------- header------->
+
+    <header>
+        <a href="#" class="logo"><img src="./assets/imgs/logo.png" alt="logo image"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My list</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <!-------- header------->
+
+    <!-------- body------->
+    <div class="banner">
+        <img src="./assets/imgs/bg.jpg" alt="background" class="bg">
+        <div class="content">
+            <img src="./assets/imgs/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis, ut sapiente recusandae
+                reiciendis mollitia tempore quo enim ad nobis quibusdam, aperiam totam praesentium cupiditate. Nulla
+                porro dicta tenetur iste.ut sapiente recusandae reiciendis mollitia tempore quo enim ad nobis quibusdam,
+                aperiam totam praesentium cupiditate. Nulla porro dicta tenetur iste.</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+                    Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                    My list</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="./assets/imgs/play.png" alt="play">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="./assets/imgs/trailer.mp4" controls="true" ></video>
+        <img src="./assets/imgs/close.png" alt="close png" class="close" onclick="toggleVideo();">
+    </div>
+    <!-------- body------->
+
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
